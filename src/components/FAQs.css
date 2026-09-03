@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+  --color-pink: #FF2D78;
+  --color-yellow: #efff09;
+  --color-black: #000000;
+  --color-green: #00FF00;
+  --color-green-apple: #9ACD32;
+  --color-white: #FFFFFF;
+  --font-heading: 'Fredoka', sans-serif;
+  --font-body: 'Poppins', sans-serif;
+}
+
+.facts-container{
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, var(--color-pink) 0%, var(--color-yellow) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.facts-container h2{
+    font-family: var(--font-body);
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.facts{
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 16px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.fact-question {
+  font-family: var(--font-heading);
+  width: 100%;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 1rem;
+
+}
+
+.fact-question svg {
+  border: 1px solid var(--color-black);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+
+}
+
+.fact-answer {
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  margin-top: 0.75rem;
+  color: #555;
+}
+
+.faq-decor {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none; /* clicks pass through to whatever's underneath */
+}
+
+.candy {
+  position: absolute;
+  color: var(--color-black);
+  opacity: 0.35;
+}
+
+/* each one gets its own position, size, and rotation — irregular, not a grid */
+.candy-1 {
+  top: 8%;
+  left: 6%;
+  width: 48px;
+  height: 48px;
+  transform: rotate(-15deg);
+}
+
+.candy-2 {
+  top: 15%;
+  right: 10%;
+  width: 32px;
+  height: 32px;
+  transform: rotate(25deg);
+  color: var(--color-black);
+  opacity: 0.15;
+}
+
+.candy-3 {
+  bottom: 12%;
+  left: 15%;
+  width: 40px;
+  height: 40px;
+  transform: rotate(40deg);
+}
+
+.candy-4 {
+  bottom: 20%;
+  right: 8%;
+  width: 56px;
+  height: 56px;
+  transform: rotate(-30deg);
+  opacity: 0.25;
+}
+
+.candy-5 {
+  top: 45%;
+  left: 45%;
+  width: 28px;
+  height: 28px;
+  transform: rotate(10deg);
+  color: var(--color-black);
+  opacity: 0.12;
+}
