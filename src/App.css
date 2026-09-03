@@ -350,10 +350,6 @@
   margin-bottom: 0.75rem;
 }
 
-.product-mix{
-    -webkit-text-stroke: 5px var(--color-yellow);
-}
-
 .products-subtitle {
   font-family: var(--font-body);
   font-size: 0.95rem;
@@ -736,97 +732,92 @@
 }
 
 /* ===== Media Queries ===== */
-@media (max-width: 768px) {
-  .header {
+@media(max-width: 768px){
+  .header{
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
   }
-
-  .nav-links {
+  .nav-links{
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
     font-size: 1rem;
   }
-
   .logo,
-  .logo-up {
+  .logo-up{
     font-size: 2rem;
   }
 }
 
-@media (max-width: 1024px) {
+@media(max-width: 1024px){
   .homepage-header,
-  .homepage-banner {
-    font-size: 1.6rem;
+  .homepage-banner{
+    font-size: 1.7rem;
   }
-
-  .hero-product-img {
+  .hero-product-img{
     max-width: 400px;
   }
 }
 
-@media (max-width: 768px) {
-  .hero-container {
+@media(max-width:768px){
+  .hero-container{
     flex-direction: column;
     text-align: center;
   }
-
   .hero-left,
-  .hero-right {
-    align-items: center;
+  .hero-right{
     max-width: 100%;
+    align-items: center;
   }
-
   .homepage-banner {
     max-width: 100%;
     margin-top: 1rem;
   }
-
-  /* diagonal clip-path looks awkward stacked vertically — soften it */
   .hero-bg {
     clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
   }
-
   .hero-cta {
     justify-content: center;
+    font-size: 1rem;
+    margin-top: -20px;
   }
-
   .fact-banner {
     justify-content: center;
     flex-wrap: wrap;
   }
+  .reviews{
+    margin-top: 1rem;
+  }
 }
 
-@media (max-width: 480px) {
-  .homepage {
-    padding: 1.25rem;
+@media(max-width: 480px){
+  .homepage{
+    padding:1.25rem;
   }
-
   .hero-product-img {
     max-width: 280px;
   }
-
   .reviews {
+    margin-bottom: 2rem;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
   }
 }
 
-@media (max-width: 900px) {
-  .bento-grid {
+@media(max-width: 900px){
+  .bento-grid{
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 200px;
   }
-  .bento-large { grid-column: span 2; grid-row: span 1; }
-  .bento-tall  { grid-row: span 1; }
+  .bento-large {grid-column: span 2; grid-row: span 1; }
+  .bento-tall {grid-row: span 1;} /* flatten out, no longer double-height */
   .bento-wide  { grid-column: span 2; }
 }
 
-@media (max-width: 600px) {
-  .bento-grid {
+@media(max-width: 600px){
+  .bento-grid{
     grid-template-columns: 1fr;
     grid-auto-rows: 240px;
   }
@@ -836,77 +827,81 @@
     grid-column: span 1;
     grid-row: span 1;
   }
-
-  .bento {
+  .bento{
     padding: 2.5rem 1.25rem;
   }
 }
 
-@media (max-width: 1024px) {
+@media(max-width:1024px){
   .product-container {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .products-title {
+   .products-title {
     font-size: 48px; /* 80px was likely fine on desktop but overwhelming smaller */
   }
 }
 
-@media (max-width: 768px) {
+@media(max-width: 768px){
   .product-container {
     grid-template-columns: 1fr;
     max-width: 400px;
   }
-
-  .products {
+  .products{
     padding: 2rem 1.25rem 3rem;
   }
 }
 
-@media (max-width: 480px) {
-  .products-title {
+@media(max-width:480px){
+  .products-title{
     font-size: 32px;
   }
-
   .product-image {
     width: 110px;
     height: 110px;
   }
 }
 
-@media (max-width: 480px) {
-  .ticker-item {
+@media(max-width: 480px){
+  .ticker-item{
     font-size: 0.9rem;
     padding: 0 1rem;
   }
 }
 
-@media (max-width: 1024px) {
+@media(max-width: 1024px){
   .review-container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 768px) {
-  .review-container {
+@media(max-width: 768px){
+  .review-container{
     grid-template-columns: 1fr;
     max-width: 400px;
   }
-
-  .review-header {
+  .review-header{
     flex-direction: column;
+    gap: 1rem;
     text-align: center;
-    gap: 0.75rem;
   }
 }
 
-@media (max-width: 480px) {
-  .review-header h2 {
-    font-size: 1.5rem;
+@media(max-width: 480px){
+  .review-header{
+    font-size: 1.2rem;
   }
-
-  .flavor-order {
+  .review-who{
+    font-size: 1rem;
+  }
+  .review-content h3{
+    font-size: 1.25rem;
+  }
+  .review-content p.comments{
+    font-size: 0.9rem;
+  }
+  .flavor-order{
     flex-wrap: wrap;
-    gap: 1rem;
+    gap:1rem;
+    font-size: 1rem;
   }
 }

@@ -9,7 +9,7 @@ function Products(){
     return (
        <section className="products" id="products">
             <div className="products-header">
-                <h1 className="products-title">OUR <span className="product-mix">BEST SOURS</span></h1>
+                <h1 className="products-title">OUR BEST SOURS</h1>
                 <p className="products-subtitle">
                 SOUR UP your taste buds with our deliciously tangy and sweet candy.
                 Made with real fruit, our candy is a guilt-free indulgence that will leave you wanting more.

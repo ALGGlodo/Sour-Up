@@ -134,38 +134,33 @@
   opacity: 0.12;
 }
 
-@media (max-width: 1024px) {
-  .facts-container {
-    height: auto;
+@media(max-width:1024px){
+  .facts-container{
     min-height: 100dvh;
+    height: auto;
     padding: 4rem 1.5rem;
   }
-
-  .facts-container h2 {
+  .facts-container h2{
     font-size: 2.25rem;
   }
 }
 
-@media (max-width: 768px) {
-  .facts-container h2 {
-    font-size: 1.9rem;
+@media(max-width:768px){
+  .facts-container h2{
+    font-size: 1.75rem;
     text-align: center;
     padding: 0 1rem;
   }
-
-  .facts {
+  .facts{
     padding: 1rem 1.25rem;
   }
-
   .fact-question {
     font-size: 1.05rem;
   }
-
   .fact-answer {
     font-size: 1rem;
   }
-
-  /* scale down the scattered candies so they don't overwhelm a narrow screen */
+    /* scale down the scattered candies so they don't overwhelm a narrow screen */
   .candy-1 { width: 34px; height: 34px; }
   .candy-2 { width: 24px; height: 24px; }
   .candy-3 { width: 30px; height: 30px; }
@@ -173,31 +168,31 @@
   .candy-5 { width: 20px; height: 20px; }
 }
 
-@media (max-width: 480px) {
-  .facts-container {
-    padding: 3rem 1rem;
+@media(max-width:480px){
+  .facts-container{
+    padding: 3rem 1.5rem;
   }
-
-  .facts-container h2 {
+  .facts-container h2{
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
   }
-
+  .fact-question {
+    font-size: 0.95rem;
+  }
+  .fact-answer {
+    font-size: 0.9rem;
+  }
   .fact-question {
     font-size: 0.95rem;
     gap: 0.5rem;
   }
-
-  .fact-answer {
+   .fact-answer {
     font-size: 0.9rem;
   }
-
-  .facts {
+   .facts {
     padding: 0.85rem 1rem;
   }
-
-  /* hide the two smallest/most central candies — at this width they're more likely to overlap text than read as decoration */
-  .candy-5 {
+   .candy-5 {
     display: none;
   }
 }
