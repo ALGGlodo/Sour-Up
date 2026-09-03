@@ -5,6 +5,7 @@ import Products from './components/Products';
 import Ticker from './components/Ticker';
 import Review from './components/Review';
 import Facts from './components/FAQs';
+import Footer from './components/Footer.jsx';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Ticker />
       <Review />
       <Facts />
+      <Footer />
     </div>
   );
 }
