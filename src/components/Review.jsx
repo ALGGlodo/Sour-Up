@@ -38,7 +38,6 @@ function Review() {
     <section className="review">
       <div className="review-header">
         <h2>What Our Customers Are Saying</h2>
-        <span className="read-more">Read More</span>
       </div>
 
       <div className="review-container">
@@ -68,6 +67,10 @@ function Review() {
         </div>
         ))}
       </div>
+
+      <span className="read-more">Read More</span>
+
+
     </section>
   );
 }

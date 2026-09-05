@@ -635,14 +635,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  max-width: 1000px;
+  max-width: 11000px;
   width: 100%;
-  cursor: grab;
 }
 
-.review-container:active {
-  cursor: grabbing;
-}
 
 .review-content{
   display: flex;
@@ -678,7 +674,7 @@
 .review-content h3{
   font-family: var(--font-heading);
   font-size: 1.1em;
-  color: var(--color-yellow);
+  color: var(--color-white);
   letter-spacing: 0.03em;
 }
 
@@ -691,7 +687,7 @@
 }
 
 .flavor-order{
-  display:flex;
+  display:inline-flex;
   align-items: center;
   gap: 2rem;
   color: var(--color-yellow);
@@ -707,8 +703,9 @@
 
 .flavor-order .quantity,
 .flavor-order .price {
+  display: inline-block;
   font-family: var(--font-body);
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: var(--color-white);
 }
 
@@ -805,9 +802,9 @@
 .footer-logo p{
   font-family: var(--font-heading);
   font-weight: 700;
-  color: var(--color-yellow);
+  color: var(--color-pink);
   font-size: 10vw;
-  -webkit-text-stroke: 1px var(--color-yellow);
+  -webkit-text-stroke: 4px var(--color-yellow);
   display: inline-block;
 }
 
@@ -872,7 +869,7 @@
     flex-wrap: wrap;
   }
   .reviews{
-    margin-top: 1rem;
+    margin-bottom: 2rem;
   }
 }
 
