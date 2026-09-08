@@ -1,25 +1,16 @@
-import Nav from './components/Nav';
-import Home from './components/Home';
-import Bento from './components/Bento';
-import Products from './components/Products';
-import Ticker from './components/Ticker';
-import Review from './components/Review';
-import Facts from './components/FAQs';
-import Footer from './components/Footer.jsx';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePages';
+import SoursPage from './pages/SourProducts';
 import './App.css';
 
 function App() {
   return (
-    <div>
-      <Nav />
-      <Home />
-      <Bento />
-      <Products />
-      <Ticker />
-      <Review />
-      <Facts />
-      <Footer />
-    </div>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/sours" element={<SoursPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

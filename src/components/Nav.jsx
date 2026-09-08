@@ -1,4 +1,5 @@
 import { ShoppingBag } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 
 function Nav() {
@@ -9,7 +10,8 @@ function Nav() {
                 <span className="logo-up">UP</span>
             </div>
             <nav className="nav-links">
-                <a href="#sours">Sours</a>
+                <Link to="/">Home</Link>
+                <Link to="/sours">Sours</Link>
                 <a href="#Reviews">Reviews</a>
                 <a href="#About">About</a>
                 <a href = "$cart" className = "cart-icon">

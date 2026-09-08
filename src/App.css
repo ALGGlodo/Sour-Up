@@ -7,13 +7,19 @@
 :root {
   --color-pink: #FF2D78;
   --color-yellow: #efff09;
+  --color-mango: #FFB347;
   --color-black: #000000;
   --color-green: #00FF00;
+  --color-assorted: linear-gradient(#FF2D78, #efff09);
+  --color-purple: #800080;
+  --color-blue: #4F86F7;
   --color-green-apple: #9ACD32;
   --color-white: #FFFFFF;
   --font-heading: 'Fredoka', sans-serif;
   --font-body: 'Poppins', sans-serif;
 }
+
+
 
 .header{
     display: flex;
@@ -935,7 +941,7 @@
 
 @media(max-width:480px){
   .products-title{
-    font-size: 32px;
+    font-size: 40px;
   }
   .product-image {
     width: 110px;
